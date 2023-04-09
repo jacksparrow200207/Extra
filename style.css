@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins:wght@300;500;700;900&display=swap");
+
+:root {
+  --orange: red;
+  --button-dark: rgb(23, 23, 23);
+  --text-grey: rgb(128, 128, 128);
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 0, 0.962)  ;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header start */
+header {
+  background-color: rgba(7, 7, 7, 0.367);
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(2px);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.052);
+  top: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left p {
+  font-weight: 700;
+  font-size: 2rem;
+  
+}
+
+.header-left p a {
+  text-decoration: none;
+  transition: 0.4s;
+  animation: animat 2s  alternate-reverse infinite;
+}
+
+
+@keyframes animat {
+  0% {
+    color:black;
+    opacity: 0;
+    
+  }
+
+5% {
+  opacity: 0;
+}
+
+100% {
+  color:red;
+  opacity: 1;
+}
+}
+.header-left p a:hover {
+  color: red;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.header-right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+  font-size: 1.1rem;
+}
+
+.header-right ul li {
+  transition: 0.4s;
+  animation: animat 2s  alternate-reverse infinite;
+}
+
+.header-right ul li:hover {
+  color: red;
+  transition: 0.4s;
+  cursor: pointer;
+  border-bottom: 1px solid red;
+}
+
+/* Header end */
+
+/* main section start */
+
+.main {
+  margin-top: 8rem;
+}
+
+.mains {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-left h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.main-left h1 span {
+  color: var(--orange);
+}
+
+.main-left h4 {
+  font-weight: 300;
+  color: var(--text-grey);
+  margin-top: 40px;
+}
+
+.main-button-1 {
+  padding: 15px 24px ;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  margin-top: 40px;
+  transition: 0.4s ease;
+}
+
+.main-button-1:hover {
+  background-color: white;
+  color: black;
+  transition: 0.4s;
+}
+
+.main-button-2 {
+  padding: 15px 24px ;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  margin-top: 40px;
+  transition: 0.4s ease;
+}
+
+.main-button-2:hover{
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+
+.main-right img{
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px grey;
+  margin-top: 50px;
+  /* animation: animat 2s  alternate-reverse infinite; */
+}
+
+.mains1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;  
+}
+
+
+.main1-left h1 {
+  margin-top: 5px;
+  font-size: 3rem;
+
+} 
+
+.main1-right-button {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 19px;
+  transition: 0.4s ease;
+}
+
+.main1-right-button:hover {
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  transition: 0.4s ease;
+}
+
+/* main section end */
+
+/* first section start*/
+
+
+/* first section end */
